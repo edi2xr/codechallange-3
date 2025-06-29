@@ -1,15 +1,12 @@
-// In-memory storage for posts
 const posts = [];
 let currentPostIndex = null;
 
-// DOM references
 const postListContainer = document.getElementById('post-list');
 const postDetailContainer = document.getElementById('post-detail');
 const createPostForm = document.getElementById('new-post-form');
 const updatePostForm = document.getElementById('edit-post-form');
 const cancelEditButton = document.getElementById('cancel-edit');
 
-// Render the list of posts
 function displayPostList() {
     const ul = document.createElement('ul');
     posts.forEach((post, i) => {
@@ -23,7 +20,6 @@ function displayPostList() {
     postListContainer.appendChild(ul);
 }
 
-// Show details for a specific post
 function displayPostDetail(index) {
     currentPostIndex = index;
     const post = posts[index];
@@ -37,7 +33,6 @@ function displayPostDetail(index) {
     document.getElementById('edit-post-btn').onclick = showUpdateForm;
 }
 
-// Handle new post creation
 createPostForm.addEventListener('submit', function(event) {
     event.preventDefault();
     const data = new FormData(createPostForm);
@@ -53,7 +48,6 @@ createPostForm.addEventListener('submit', function(event) {
     postDetailContainer.innerHTML = '<h2>Select a post to see details</h2>';
 });
 
-// Show the edit form with current post data
 function showUpdateForm() {
     if (currentPostIndex === null) return;
     const post = posts[currentPostIndex];
@@ -62,7 +56,6 @@ function showUpdateForm() {
     updatePostForm.elements['content'].value = post.content;
 }
 
-// Handle post update
 updatePostForm.addEventListener('submit', function(event) {
     event.preventDefault();
     if (currentPostIndex === null) return;
@@ -73,10 +66,8 @@ updatePostForm.addEventListener('submit', function(event) {
     displayPostDetail(currentPostIndex);
 });
 
-// Cancel editing
 cancelEditButton.addEventListener('click', function() {
     updatePostForm.classList.add('hidden');
 });
 
-// Initial render
 displayPostList();

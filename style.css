@@ -1,12 +1,11 @@
-/* Base Styles */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    color: #3a2c3b;
+    color: #2c3e50;
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: linear-gradient(135deg, #ffe0f7 0%, #e0e7ff 100%);
-    background-image: url(tech.jpeg);
+    background: linear-gradient(135deg, #6ca0dc 0%, #98b5d9 100%);
+    background-image: url(./drive.gif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,19 +16,18 @@ body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: linear-gradient(135deg, #ffe0f7cc 0%, #e0e7ffcc 100%);
+    background: linear-gradient(135deg, #4e6e8ecc 0%, #bccceacc 100%);
     z-index: 0;
     pointer-events: none;
 }
 
-/* Typography */
 h1 {
     text-align: center;
     margin-top: 40px;
     font-size: 3rem;
-    color: #b83280;
+    color: #1e4a8a;
     letter-spacing: 2px;
-    text-shadow: 0 2px 12px #f8bbd0, 0 4px 24px #e1bee7;
+    text-shadow: 0 2px 12px #8ab6d6, 0 4px 24px #6d93bd;
     font-weight: 900;
     font-family: 'Pacifico', cursive, 'Segoe UI', Arial, sans-serif;
     position: relative;
@@ -38,12 +36,11 @@ h1 {
 label {
     font-weight: 700;
     margin-bottom: 4px;
-    color: #b83280;
+    color: #336699;
     letter-spacing: 0.7px;
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-/* Layout */
 #main-container {
     display: flex;
     justify-content: center;
@@ -55,75 +52,71 @@ label {
     z-index: 1;
 }
 
-/* Components: Post List & Detail */
 #post-list, #post-detail {
-    background: rgba(255,255,255,0.96);
+    background: rgba(215, 232, 250, 0.96);
     border-radius: 28px 28px 48px 48px;
-    box-shadow: 0 8px 32px rgba(186,104,200,0.18), 0 2px 8px #f8bbd0;
+    box-shadow: 0 8px 32px rgba(100, 130, 160, 0.18), 0 2px 8px #7da6d6;
     padding: 36px 32px;
     flex: 1 1 0;
     min-width: 320px;
     transition: box-shadow 0.3s, transform 0.2s;
-    border: 2.5px solid #f8bbd0;
+    border: 2.5px solid #8ab3de;
     backdrop-filter: blur(2px);
 }
 #post-list:hover, #post-detail:hover {
-    box-shadow: 0 16px 48px rgba(186,104,200,0.22), 0 4px 16px #f8bbd0;
+    box-shadow: 0 16px 48px rgba(80, 140, 180, 0.22), 0 4px 16px #86accf;
     transform: translateY(-4px) scale(1.02);
 }
 #post-list h2, #post-detail h2 {
     margin-top: 0;
-    color: #b83280;
+    color: #2a70c2;
     font-size: 1.7rem;
     letter-spacing: 1.5px;
-    border-bottom: 2.5px dashed #f8bbd0;
+    border-bottom: 2.5px dashed #6eaad8;
     padding-bottom: 10px;
     margin-bottom: 22px;
     font-family: 'Pacifico', cursive, 'Segoe UI', Arial, sans-serif;
 }
 
-/* Post List Items */
 #post-list ul {
     list-style: none;
     padding: 0;
 }
 #post-list li {
     padding: 16px 0;
-    border-bottom: 1px dashed #f3c6e8;
+    border-bottom: 1px dashed #7ab5e1;
     cursor: pointer;
     transition: background 0.2s, padding-left 0.2s, color 0.2s;
     position: relative;
     font-size: 1.12rem;
-    color: #7c3a6e;
+    color: #3f8ec9;
 }
 #post-list li:hover {
-    background: linear-gradient(90deg, #ffe0f7 60%, #e0e7ff 100%);
+    background: linear-gradient(90deg, #b1d6f2 60%, #e0e7ff 100%);
     padding-left: 18px;
-    color: #b83280;
+    color: #1f4b99;
 }
 #post-list li::before {
     content: "♡";
-    color: #f06292;
+    color: #5ba9e6;
     margin-right: 12px;
     opacity: 0.7;
     font-size: 1.1em;
     vertical-align: middle;
 }
 
-/* Post Detail Image */
 #post-detail img {
     max-width: 100%;
     border-radius: 18px;
     margin-bottom: 24px;
-    box-shadow: 0 4px 18px #f8bbd0, 0 2px 12px #e1bee7;
-    border: 3px solid #f8bbd0;
+    box-shadow: 0 4px 18px #7faede, 0 2px 12px #638ab3;
+    border: 3px solid #7cb1dd;
 }
 
-/* Forms */
 form {
-    background: rgba(255,255,255,0.98);
+    background: rgba(176, 202, 239, 0.98);
     border-radius: 28px 28px 48px 48px;
-    box-shadow: 0 8px 32px rgba(186,104,200,0.18), 0 2px 8px #f8bbd0;
+    box-shadow: 0 8px 32px rgba(80, 110, 170, 0.18), 0 2px 8px #4d78a3;
     max-width: 540px;
     margin: 40px auto;
     padding: 36px 32px;
@@ -131,7 +124,7 @@ form {
     flex-direction: column;
     gap: 18px;
     animation: fadeInUp 0.8s;
-    border: 2.5px solid #f8bbd0;
+    border: 2.5px solid #5c94c4;
     position: relative;
     z-index: 1;
 }
@@ -139,23 +132,23 @@ form input[type="text"],
 form input[type="url"],
 form textarea {
     padding: 14px;
-    border: 2px solid #f8bbd0;
+    border: 2px solid #5d94d4;
     border-radius: 12px;
     font-size: 1.12rem;
     transition: border 0.2s, box-shadow 0.2s;
-    background: #fff0fa;
-    box-shadow: 0 1px 6px #f8bbd0;
-    color: #7c3a6e;
+    background: #b4d2ee;
+    box-shadow: 0 1px 6px #91b5d4;
+    color: #2b5d85;
 }
 form input:focus,
 form textarea:focus {
-    border-color: #b83280;
+    border-color: #397eb5;
     outline: none;
-    box-shadow: 0 0 0 3px #f8bbd0;
-    background: #ffe0f7;
+    box-shadow: 0 0 0 3px #72a6d5;
+    background: #a6caeb;
 }
 form button {
-    background: linear-gradient(90deg, #f06292 60%, #ba68c8 100%);
+    background: linear-gradient(90deg, #2a65c0 60%, #477bd7 100%);
     color: #fff;
     border: none;
     border-radius: 12px;
@@ -165,40 +158,15 @@ form button {
     cursor: pointer;
     transition: background 0.2s, transform 0.1s;
     letter-spacing: 1.2px;
-    box-shadow: 0 2px 12px #f8bbd0;
+    box-shadow: 0 2px 12px #91b2e3;
     margin-top: 8px;
 }
 form button:hover {
-    background: linear-gradient(90deg, #ba68c8 60%, #f06292 100%);
+    background: linear-gradient(90deg, #477bd7 60%, #2a65c0 100%);
     transform: translateY(-2px) scale(1.04);
 }
 form .hidden {
     display: none;
 }
 
-/* Utilities & Responsive */
-@media (max-width: 900px) {
-    #main-container {
-        flex-direction: column;
-        gap: 20px;
-        max-width: 98vw;
-        padding: 0 6px;
-    }
-    #post-list, #post-detail {
-        min-width: unset;
-        padding: 22px 10px;
-    }
-    form {
-        padding: 22px 10px;
-    }
-}
 
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(30px);}
-    to { opacity: 1; transform: translateY(0);}
-}
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(40px);}
-    to { opacity: 1; transform: translateY(0);}
-}

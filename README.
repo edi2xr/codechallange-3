@@ -1,17 +1,17 @@
 ### SIMPLE BLOG!
 
 
-📝 Blog Post Manager
+# Blog Post Manager
 A simple blog post manager built with HTML, CSS, and JavaScript that uses a local API to view, add, update, and delete blog posts.
 
-📚 Learning Goals
+ # Learning Goals
 Access data from an API using GET requests and display it on the page (DOM).
 
 Listen for user interactions like clicks and form submissions to update the UI.
 
 (Advanced) Send data to an API using POST, PATCH, and DELETE requests.
 
-🚀 Features
+ # Features
 ✅ View all blog post titles.
 
 ✅ Click a post title to see its full details.
@@ -24,7 +24,7 @@ Listen for user interactions like clicks and form submissions to update the UI.
 
 ✅ (Advanced) Persist changes using API requests.
 
-🔧 Setup Instructions
+# Setup Instructions
 1. Clone or Download This Project
 bash
 Copy
@@ -52,7 +52,7 @@ http://localhost:3000/posts
 4. Start the Frontend
 You can use live-server or open index.html in your browser.
 
-To install live-server globally:
+# To install live-server globally:
 
 bash
 Copy
@@ -65,7 +65,7 @@ Copy
 Edit
 live-server
 
-🗂️ Project Structure
+#  Project Structure
 pgsql
 Copy
 Edit
@@ -77,7 +77,7 @@ project-folder/
 │   └── index.js
 └── db.json
 
-📡 API Endpoints Used
+# API Endpoints Used
 Method	Endpoint	Description
 GET	/posts	Get all blog posts
 GET	/posts/:id	Get a single post
@@ -85,7 +85,7 @@ POST	/posts	Create a new post
 PATCH	/posts/:id	Update an existing post
 DELETE	/posts/:id	Delete a post
 
-🧠 Advanced Ideas to Try
+# Advanced Ideas to Try
 Automatically show the first post when the page loads.
 
 Add a form to edit the post details.
@@ -94,7 +94,7 @@ Add a delete button and remove posts from the list.
 
 Persist all changes to the db.json file using the API.
 
-👩‍💻 Tech Used
+# Tech Used
 HTML
 
 CSS
@@ -103,12 +103,11 @@ JavaScript (Vanilla JS)
 
 JSON Server
 
-📸 Demo Preview
-(Add a screenshot or screen recording GIF showing your app here)
 
-📥 Contributions
+
+# Contributions
 This is a beginner project, but feel free to fork, clone, and experiment!
 
-🧑‍🏫 Credits
+# Credits
 Created for learning purposes to understand DOM manipulation and working with REST APIs.
 
